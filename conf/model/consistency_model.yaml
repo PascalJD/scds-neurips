@@ -1,0 +1,7 @@
+defaults:
+  - base@base_model: fouriermlp
+  - _self_
+
+_target_: sde_sampler.models.reparam.ConsistencyModel
+clip_model: 1e4
+sigma_data: 0.5
